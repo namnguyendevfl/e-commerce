@@ -25,8 +25,7 @@ export default function Category({popup, setPopup}) {
     setPopup(() => !popup)
     setEnter(() => false)
   }
-  const itemSelect = () => {
-  }
+
   return (
     <div>
       <div>
@@ -163,7 +162,6 @@ export default function Category({popup, setPopup}) {
                 </div>
               </div>
             </section>
-            {/* Pagnimation */}
             <nav className='d-flex align-items-center justify-content-center'>
                 <div>
                   <button className='bg-none border-radius-4px border-gray px-2 pag-h-1 fw-6'>previous</button>
