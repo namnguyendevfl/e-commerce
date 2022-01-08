@@ -36,26 +36,22 @@ export default function Category({popup, setPopup}) {
           </p>
           <nav className='px-5 mx-5'>
             <div style = {{borderBottom:"1px solid rgb(229 231 235)"}}>
-            <div className="d-flex align-items-center" style = {{height: "4rem"}}>
-                <div>
-                  <button className="bg-white border-outline-none text-sm fw-medium text-gray-7">Women</button>
-                  <button className=" ms-4 bg-white border-outline-none text-sm fw-medium text-gray-7">Men</button>
-                  <button className="ms-4 bg-white border-outline-none text-sm fw-medium text-gray-7">Company</button>
-                  <button className="ms-4 bg-white border-outline-none text-sm fw-medium text-gray-7">Store</button>
-                </div>
-                <div className="d-flex align-items-center" style = {{marginLeft:"auto"}}>
-                  <div className="d-flex justify-content-end align-items-center">
-                    <button className="bg-white border-outline-none text-sm fw-medium text-gray-7">Sign in</button>
-                    <button className="ms-4 bg-white border-outline-none text-sm fw-medium text-gray-7">Create account</button>
-                    <BiSearch className="ms-4 bg-white border-outline-none text-sm fw-medium text-gray-7"/>
-                    <div className="ms-4 bg-white border-outline-none text-sm fw-medium text-gray-7" >text</div>
+              <div className="d-flex align-items-center" style = {{height: "4rem"}}>
+                  <div>
+                    <button className="bg-white border-outline-none text-sm fw-medium text-gray-7">Women</button>
+                    <button className=" ms-4 bg-white border-outline-none text-sm fw-medium text-gray-7">Men</button>
+                    <button className="ms-4 bg-white border-outline-none text-sm fw-medium text-gray-7">Company</button>
+                    <button className="ms-4 bg-white border-outline-none text-sm fw-medium text-gray-7">Store</button>
                   </div>
-                  <div></div>
-                  <div></div>
-                  <div></div>
-                </div>
+                  <div className="d-flex align-items-center" style = {{marginLeft:"auto"}}>
+                    <div className="d-flex justify-content-end align-items-center">
+                      <button className="bg-white border-outline-none text-sm fw-medium text-gray-7">Sign in</button>
+                      <button className="ms-4 bg-white border-outline-none text-sm fw-medium text-gray-7">Create account</button>
+                      <BiSearch className="ms-4 bg-white border-outline-none text-sm fw-medium text-gray-7"/>
+                      <div className="ms-4 bg-white border-outline-none text-sm fw-medium text-gray-7" >text</div>
+                    </div>
+                  </div>
               </div>
-   
             </div>
           </nav>
         </header>
@@ -75,15 +71,15 @@ export default function Category({popup, setPopup}) {
                   <div>
                     <fieldset>
                       <legend className='text-sm fw-medium text-gray-9'>Color</legend>
-                      <div className=''>
+                      <div>
                         <input type ="checkbox" style = {{width: "1rem", height:"1rem"}}></input>
                         <label className='ms-2 text-sm text-gray-6'>White</label>
                       </div>
-                      <div className=''>
+                      <div>
                         <input type ="checkbox" style = {{width: "1rem", height:"1rem"}}></input>
                         <label className='ms-2 text-sm text-gray-6'>Blue</label>
                       </div>
-                      <div className=''>
+                      <div>
                         <input type ="checkbox" style = {{width: "1rem", height:"1rem"}}></input>
                         <label className='ms-2 text-sm text-gray-6'>Red</label>
                       </div>
@@ -97,7 +93,6 @@ export default function Category({popup, setPopup}) {
                   <div>
                     <fieldset>
                       <legend className='text-sm fw-medium text-gray-9'>Sizes</legend>
-                      
                     </fieldset>
                   </div>
                 </form>
@@ -111,7 +106,7 @@ export default function Category({popup, setPopup}) {
                   </div>
                   <div>
                     <h3 className='text-sm fw-medium text-gray-9'>product 1</h3>
-                    <p class="text-sm text-gray-5">Get the full lineup of our Basic Tees. Have a fresh shirt all week, and an extra for laundry day.</p>
+                    <p className="text-sm text-gray-5">Get the full lineup of our Basic Tees. Have a fresh shirt all week, and an extra for laundry day.</p>
                     <p className='txt-base fw-medium' style = {{color: "#ea580c"}}>$200</p>
                   </div>
                 </div>
@@ -121,7 +116,17 @@ export default function Category({popup, setPopup}) {
                   </div>
                   <div>
                     <h3 className='text-sm fw-medium text-gray-9'>product 1</h3>
-                    <p class="text-sm text-gray-5">Get the full lineup of our Basic Tees. Have a fresh shirt all week, and an extra for laundry day.</p>
+                    <p className="text-sm text-gray-5">Get the full lineup of our Basic Tees. Have a fresh shirt all week, and an extra for laundry day.</p>
+                    <p className='txt-base fw-medium' style = {{color: "#ea580c"}}>$200</p>
+                  </div>
+                </div>
+                <div className='col-3'> 
+                  <div>
+                    <img className='item' style = {{width: "100%", height: "100%"}} src="https://tailwindui.com/img/ecommerce-images/category-page-02-image-card-01.jpg" alt="Eight shirts arranged on table in black, olive, grey, blue, white, red, mustard, and green." />
+                  </div>
+                  <div>
+                    <h3 className='text-sm fw-medium text-gray-9'>product 1</h3>
+                    <p className="text-sm text-gray-5">Get the full lineup of our Basic Tees. Have a fresh shirt all week, and an extra for laundry day.</p>
                     <p className='txt-base fw-medium' style = {{color: "#ea580c"}}>$200</p>
                   </div>
                 </div>
@@ -131,17 +136,7 @@ export default function Category({popup, setPopup}) {
                   </div>
                   <div>
                     <h3 className='text-sm fw-medium text-gray-9'>product 1</h3>
-                    <p class="text-sm text-gray-5">Get the full lineup of our Basic Tees. Have a fresh shirt all week, and an extra for laundry day.</p>
-                    <p className='txt-base fw-medium' style = {{color: "#ea580c"}}>$200</p>
-                  </div>
-                </div>
-                <div className='col-3'> 
-                  <div>
-                  <img className='item' style = {{width: "100%", height: "100%"}} src="https://tailwindui.com/img/ecommerce-images/category-page-02-image-card-01.jpg" alt="Eight shirts arranged on table in black, olive, grey, blue, white, red, mustard, and green." />
-                  </div>
-                  <div>
-                    <h3 className='text-sm fw-medium text-gray-9'>product 1</h3>
-                    <p class="text-sm text-gray-5">Get the full lineup of our Basic Tees. Have a fresh shirt all week, and an extra for laundry day.</p>
+                    <p className="text-sm text-gray-5">Get the full lineup of our Basic Tees. Have a fresh shirt all week, and an extra for laundry day.</p>
                     <p className='txt-base fw-medium' style = {{color: "#ea580c"}}>$200</p>
                   </div>
                 </div>
@@ -158,12 +153,11 @@ export default function Category({popup, setPopup}) {
                       </button>
                     </div>
                     </>
-                   
                   }
                   </div>
                   <div>
                     <h3 className='text-sm fw-medium text-gray-9'>product 1</h3>
-                    <p class="text-sm text-gray-5">Get the full lineup of our Basic Tees. Have a fresh shirt all week, and an extra for laundry day.</p>
+                    <p className="text-sm text-gray-5">Get the full lineup of our Basic Tees. Have a fresh shirt all week, and an extra for laundry day.</p>
                     <p className='txt-base fw-medium' style = {{color: "#ea580c"}}>$200</p>
                   </div>
                 </div>
