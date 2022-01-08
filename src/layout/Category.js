@@ -131,7 +131,7 @@ export default function Category({popup, setPopup}) {
                 </div>
                 <div className='col-3'> 
                   <div>
-                  <img className='item' style = {{width: "100%", height: "100%"}} src="https://tailwindui.com/img/ecommerce-images/category-page-02-image-card-01.jpg" alt="Eight shirts arranged on table in black, olive, grey, blue, white, red, mustard, and green." />
+                    <img className='item' style = {{width: "100%", height: "100%"}} src="https://tailwindui.com/img/ecommerce-images/category-page-02-image-card-01.jpg" alt="Eight shirts arranged on table in black, olive, grey, blue, white, red, mustard, and green." />
                   </div>
                   <div>
                     <h3 className='text-sm fw-medium text-gray-9'>product 1</h3>
