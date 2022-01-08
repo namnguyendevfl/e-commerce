@@ -46,7 +46,8 @@ function Info() {
                         <button className="h-100 w-100 me-3">Add to Cart</button> 
                     </div>
                     <div>
-                        <a href="#">See more details</a>
+                        {/* <a href="#">See more details</a> */}
+                        <button>See more details</button>
                     </div>
                 </div>
             </div>
