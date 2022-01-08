@@ -141,7 +141,7 @@ export default function Category({popup, setPopup}) {
                 </div>
                 <div className='col-3' > 
                   <div className='position-relative' onMouseEnter={mouseEnter} onMouseLeave = {mouseLeave} >
-                  <button className='p-0 m-0 w-100 h-100 border-outline-none bg-none' onClick = {itemSelect}>
+                  <button className='p-0 m-0 w-100 h-100 border-outline-none bg-none' >
                     <img className='item w-100 h-100' src="https://tailwindui.com/img/ecommerce-images/category-page-02-image-card-01.jpg" alt="Eight shirts arranged on table in black, olive, grey, blue, white, red, mustard, and green." />
                   </button>
                   {enter &&
