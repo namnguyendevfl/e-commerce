@@ -199,7 +199,6 @@ export default function NewItem({newItem, setNewItem, properties}) {
         const reader = new FileReader();
         reader.onload = function(onLoadEvent) {
         setImageSrc(onLoadEvent.target.result);
-        setUploadData(undefined);
     }
     reader.readAsDataURL(changeEvent.target.files[0]);
     }
