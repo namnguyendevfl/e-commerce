@@ -46,9 +46,16 @@ code {
   color: rgb(75 85 99);
 }
 
+.txt-dec-none {
+  text-decoration: none;
+}
 .txt-base {
   font-size: 1rem;
   line-height: 1.5rem;
+}
+.txt-md{
+  font-size: 1rem;
+  line-height: 1.25rem;
 }
 
 .txt-l{
@@ -59,10 +66,15 @@ code {
   font-size: 1.25rem;
   line-height: 1.75rem;
 }
+.txt-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
 .text-gray-5 {
   color: rgb(107 114 128)
 }
 
+.
 .bg-gray-2 {
   background-color: #e5e7eb;
 }
@@ -119,4 +131,14 @@ code {
 
 .border-radius-4px {
   border-radius: 4px;
+}
+
+.border-radius-8px {
+  border-radius: 8px;
+}
+
+#upload {
+  opacity: 0;
+  position: absolute;
+  z-index: -1;
 }
