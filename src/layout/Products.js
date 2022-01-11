@@ -119,7 +119,7 @@ function ItemList({enter, quickView, handleQuickView, item, idx, selectedItem, m
       <button className='p-0 m-0 w-100 h-100 border-outline-none bg-none' >
         <img id = {idx} className='item w-100 h-100' src={item.imageSrc} alt={item.imageAlt} />
       </button>
-      {enter && (idx == selectedItem) &&
+      {enter && (idx === selectedItem) &&
         <>
           <div style = {quickView} className='position-absolute w-100  b-0 l-0' >
           <button className='w-100 h-100 border-outline-none bg-none' style={{color:"white"}} onClick = {handleQuickView}>
@@ -160,7 +160,7 @@ export default function Products({popup, setPopup, category, properties, setProp
         setProducts(itemsMap.get("men"))
         setProperties(propertiesMap.get("men"))
     }
-  }, [category])
+  }, [category, setProperties])
 
   const mouseEnter = (e) => {
     setEnter(() => true)

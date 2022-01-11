@@ -57,17 +57,12 @@ function ValueList({value, idx, formData, property, setFormData}) {
 }
 
 function Info({categories = [], properties, addDescription, setAddDescription, backDescription, setBackDescription, handleChange, formData, setFormData}) {
-    const handleAddDescription = () => {
-        setAddDescription(() => !addDescription)
-        setBackDescription(() => false)
-    }
     const [selectProperty, setSelectProperty] = useState(null)
-    
     const renderedProperties = properties.map((property, idx) => {
         const key = Object.keys(property)
         const values = Object.values(property)
         const handleSelectProperty = ({target : {id}}) => {
-            if (selectProperty == key) {setSelectProperty(null)}
+            if (selectProperty === key) {setSelectProperty(null)}
             else {setSelectProperty(id)}
         }
         
@@ -81,14 +76,14 @@ function Info({categories = [], properties, addDescription, setAddDescription, b
                 <div className="me-3 d-flex justify-content-between">
                     <h4 className='text-sm fw-medium text-gray-9'>{key}</h4>
                     <button type = "button" onClick = {handleSelectProperty} className="border-outline-none bg-none d-flex align-items-center">
-                        {selectProperty == key
+                        {selectProperty === key
                         ? <RiArrowUpSLine />
                         : <RiArrowDownSLine id = {key} />
                         }
                     </button>
                 </div>
                 <div className="ms-3 d-flex">
-                    {selectProperty == key && 
+                    {selectProperty === key && 
                             renderedValues
                         }
                 </div>
@@ -193,7 +188,6 @@ export default function NewItem({newItem, setNewItem, properties}) {
     const [formData, setFormData] = useState(initialData)
     // console.log(formData)
     const [imageSrc, setImageSrc] = useState();
-    const [uploadData, setUploadData] = useState();
     const handleChange = ({target: {name, value}}) => {
         setFormData(prevData => ({
             ...prevData,
@@ -227,7 +221,6 @@ export default function NewItem({newItem, setNewItem, properties}) {
             ...prevData,
             imageUrl: data.secure_url
         }))
-        console.log(formData)
     }
     return (newItem &&
         <>
@@ -243,7 +236,7 @@ export default function NewItem({newItem, setNewItem, properties}) {
                         </div>
                         <div className="col-7 h-100">
                             <div className="p-5 w-100 d-flex justify-content-center" style = {{height:"70%"}}>
-                                <img className="" style = {{maxHeight:"100%", maxWidth:"100%"}} src={imageSrc}/>
+                                <img className="" style = {{maxHeight:"100%", maxWidth:"100%"}} src={imageSrc} alt=""/>
                             </div>
                             <div className="d-flex justify-content-center">
                                 <input  style = {{border:"1px solid"}} 
